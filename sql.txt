@@ -1,0 +1,56 @@
+-- 1. Create database
+
+
+CREATE DATABASE roda_gems;
+USE roda_gems;
+
+-- 2. Users Table
+
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 3. Jewelry Table
+
+
+CREATE TABLE jewelry (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    material VARCHAR(50),
+    description TEXT,
+    price DECIMAL(10,2) NOT NULL,
+    image VARCHAR(255),
+    badge VARCHAR(50),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- 4. Orders Table
+
+
+CREATE TABLE orders (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT NOT NULL,
+    jewelry_id INT NOT NULL,
+    quantity INT NOT NULL,
+    order_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
+    FOREIGN KEY (jewelry_id) REFERENCES jewelry(id) ON DELETE CASCADE
+);
+
+INSERT INTO jewelry (id, name, category, material, description, price, image, badge) VALUES
+(1, 'Diamond Eternity Ring', 'Ring', 'Platinum', 'Stunning platinum ring featuring brilliant cut diamonds in an eternity setting.', 15999.00, '../images/product1.jpg', 'New'),
+(2, 'Sapphire Dreams Necklace', 'Necklace', 'Gold', 'Elegant 18k gold necklace with royal blue sapphires and diamond accents.', 8750.00, '../images/product2.jpg', 'Popular'),
+(3, 'Emerald Garden Earrings', 'Earrings', 'Gold', 'Exquisite Colombian emerald earrings set in vintage 18k yellow gold.', 6500.00, '../images/product3.jpg', ''),
+(4, 'Ruby Passion Bracelet', 'Bracelet', 'Rose Gold', 'Luxurious Burmese ruby bracelet with intricate rose gold filigree work.', 9200.00, '../images/product4.jpg', 'Limited'),
+(5, 'Pearl Elegance Necklace', 'Necklace', 'Silver', 'Classic South Sea pearl necklace with sterling silver clasp and details.', 3200.00, '../images/product5.jpg', ''),
+(6, 'Diamond Tennis Bracelet', 'Bracelet', 'Platinum', 'Premium platinum tennis bracelet featuring 5 carats of brilliant diamonds.', 22500.00, '../images/product6.jpg', 'Luxury'),
+(7, 'Vintage Rose Ring', 'Ring', 'Rose Gold', 'Antique-inspired rose gold ring with pink tourmaline and diamond accents.', 4750.00, '../images/product7.jpg', ''),
+(8, 'Starlight Earrings', 'Earrings', 'Silver', 'Delicate sterling silver earrings with star motif and sparkling cubic zirconia.', 890.00, '../images/product8.jpg', 'Bestseller'),
+(9, 'Ocean Blue Ring', 'Ring', 'Gold', 'Mesmerizing aquamarine ring surrounded by diamonds in 14k white gold.', 7300.00, '../images/product9.jpg', ''),
+(10, 'Heritage Necklace', 'Necklace', 'Platinum', 'Timeless platinum necklace featuring a rare pink diamond pendant.', 45000.00, '../images/product10.jpg', 'Exclusive');

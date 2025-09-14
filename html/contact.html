@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Roda Gems | Luxury Jewelry Sydney</title>
+  <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    
+    <header>
+        <div class="header-content">
+            <div class="logo">Roda Gems</div>
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="items.html">Collections</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu" id="mobile-toggle">☰</div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="page-title">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you. Send us a message and we'll respond as soon as possible. Visit our Sydney showroom or get in touch through any of the methods below.</p>
+        </div>
+
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2 class="form-title">Send Us a Message</h2>
+                
+                <div id="success-msg" class="message success-message"></div>
+                <div id="error-msg" class="message error-message"></div>
+
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general-inquiry">General Inquiry</option>
+                            <option value="custom-jewelry">Custom Jewelry Design</option>
+                            <option value="repair-service">Jewelry Repair</option>
+                            <option value="appointment">Book Appointment</option>
+                            <option value="wedding-rings">Wedding Rings</option>
+                            <option value="engagement-rings">Engagement Rings</option>
+                            <option value="appraisal">Jewelry Appraisal</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Tell us how we can help you..." required></textarea>
+                        <div class="error-message"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preferredContact">Preferred Contact Method</label>
+                        <select id="preferredContact" name="preferredContact">
+                            <option value="">Select preference</option>
+                            <option value="email">Email</option>
+                            <option value="phone">Phone</option>
+                            <option value="either">Either</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span class="loading-spinner"></span>
+                        <span class="btn-text">Send Message</span>
+                    </button>
+                </form>
+            </div>
+
+          
+            <div class="contact-info">
+                <h2 class="info-title">Get in Touch</h2>
+
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-content">
+                        <h3>Visit Our Showroom</h3>
+                        <p>123 George Street<br>
+                        Sydney CBD, NSW 2000<br>
+                        Australia</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-content">
+                        <h3>Call Us</h3>
+                        <p><a href="tel:+61234567890">+61 2 3456 7890</a><br>
+                        <a href="tel:+61412345678">+61 412 345 678</a> (Mobile)</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">✉️</div>
+                    <div class="info-content">
+                        <h3>Email Us</h3>
+                        <p><a href="mailto:info@rodagems.com.au">info@rodagems.com.au</a><br>
+                        <a href="mailto:sales@rodagems.com.au">sales@rodagems.com.au</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">🌐</div>
+                    <div class="info-content">
+                        <h3>Follow Us</h3>
+                        <p>
+                            <a href="#" style="margin-right: 15px;">Instagram</a>
+                            <a href="#" style="margin-right: 15px;">Facebook</a>
+                            <a href="#">LinkedIn</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="business-hours">
+                    <h4>Business Hours</h4>
+                    <div class="hours-item">
+                        <span>Monday - Friday</span>
+                        <span>9:00 AM - 6:00 PM</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Saturday</span>
+                        <span>10:00 AM - 5:00 PM</span>
+                    </div>
+                    <div class="hours-item">
+                        <span>Sunday</span>
+                        <span>12:00 PM - 4:00 PM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ 
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="home.html">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="about.html">About Us</a>
+                <a href="#services">Services</a>
+            </div>
+            <div class="footer-section">
+                <h3>Services</h3>
+                <a href="#">Custom Design</a>
+                <a href="#">Jewelry Repair</a>
+                <a href="#">Appraisals</a>
+                <a href="#">Cleaning & Maintenance</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <a href="tel:+1234567890">+1 (234) 567-8900</a>
+                <a href="mailto:info@rodagems.com">info@rodagems.com</a>
+                <a href="#">123 Luxury Lane, Sydney</a>
+                <a href="#">Mon-Sat: 10AM-7PM</a>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+                <a href="#">Pinterest</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Roda Gems. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+    <script>
+ 
+ const mobileToggle = document.getElementById('mobile-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+
+        function validateEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        function validatePhone(phone) {
+            if (!phone) return true; // Optional field
+            const phoneRegex = /^[\+]?[\d\s\-\(\)]{10,}$/;
+            return phoneRegex.test(phone);
+        }
+
+        function validateName(name) {
+            return name.trim().length >= 2;
+        }
+
+        function validateMessage(message) {
+            return message.trim().length >= 10;
+        }
+
+
+        function showFieldError(fieldName, message) {
+            const field = document.querySelector(`[name="${fieldName}"]`);
+            const formGroup = field.closest('.form-group');
+            const errorMessage = formGroup.querySelector('.error-message');
+            
+            formGroup.classList.add('error');
+            errorMessage.textContent = message;
+            
+            setTimeout(() => {
+                formGroup.classList.remove('error');
+            }, 4000);
+        }
+
+
+        function clearFieldError(fieldName) {
+            const field = document.querySelector(`[name="${fieldName}"]`);
+            const formGroup = field.closest('.form-group');
+            formGroup.classList.remove('error');
+        }
+
+  
+        function showMessage(type, text) {
+            const messageEl = document.getElementById(type === 'success' ? 'success-msg' : 'error-msg');
+            messageEl.textContent = text;
+            messageEl.classList.add('show');
+            
+            setTimeout(() => {
+                messageEl.classList.remove('show');
+            }, 5000);
+        }
+
+  
+        function clearMessages() {
+            document.getElementById('success-msg').classList.remove('show');
+            document.getElementById('error-msg').classList.remove('show');
+        }
+
+
+        function setLoadingState(loading) {
+            const submitBtn = document.querySelector('.submit-btn');
+            const spinner = submitBtn.querySelector('.loading-spinner');
+            const btnText = submitBtn.querySelector('.btn-text');
+            
+            if (loading) {
+                submitBtn.disabled = true;
+                spinner.style.display = 'inline-block';
+                btnText.textContent = 'Sending...';
+            } else {
+                submitBtn.disabled = false;
+                spinner.style.display = 'none';
+                btnText.textContent = 'Send Message';
+            }
+        }
+
+    
+        async function submitContactForm(formData) {
+     
+            try {
+                const response = await fetch('/api/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+
+                return await response.json();
+            } catch (error) {
+                
+                await new Promise(resolve => setTimeout(resolve, 1500));
+                
+              
+                return {
+                    success: true,
+                    message: 'Thank you for your message! We\'ll get back to you within 24 hours.'
+                };
+            }
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            let isValid = true;
+
+       
+            clearMessages();
+            
+            if (!validateName(data.fullName)) {
+                showFieldError('fullName', 'Please enter your full name (at least 2 characters)');
+                isValid = false;
+            }
+            
+            if (!validateEmail(data.email)) {
+                showFieldError('email', 'Please enter a valid email address');
+                isValid = false;
+            }
+            
+            if (!validatePhone(data.phone)) {
+                showFieldError('phone', 'Please enter a valid phone number');
+                isValid = false;
+            }
+            
+            if (!data.subject) {
+                showFieldError('subject', 'Please select a subject');
+                isValid = false;
+            }
+            
+            if (!validateMessage(data.message)) {
+                showFieldError('message', 'Please enter a message (at least 10 characters)');
+                isValid = false;
+            }
+            
+            if (!isValid) return;
+
+            try {
+                setLoadingState(true);
+                
+                const submissionData = {
+                    ...data,
+                    timestamp: new Date().toISOString(),
+                    source: 'website',
+                    ipAddress: 'client-ip', 
+                    userAgent: navigator.userAgent
+                };
+                
+                const response = await submitContactForm(submissionData);
+                
+                if (response.success) {
+                    showMessage('success', response.message);
+                    this.reset(); 
+                } else {
+                    showMessage('error', response.message || 'Failed to send message. Please try again.');
+                }
+            } catch (error) {
+                showMessage('error', 'Network error. Please check your connection and try again.');
+                console.error('Contact form error:', error);
+            } finally {
+                setLoadingState(false);
+            }
+        });
+
+        document.querySelectorAll('input, select, textarea').forEach(field => {
+            field.addEventListener('input', function() {
+                clearFieldError(this.name);
+            });
+            
+            field.addEventListener('change', function() {
+                clearFieldError(this.name);
+            });
+        });
+
+    </script>
+</body>
+</html>
